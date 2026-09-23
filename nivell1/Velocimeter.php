@@ -12,9 +12,9 @@ class Velocimeter {
         } else if ($this->speed >= 30 and $this->speed <= 60) {
             return "Velocitat adecuada";
         } else if ($this->speed >= 61 and $this->speed <= 80) {
-            return "Exces Lleu";
+            return "Exces lleu";
         } else if ($this->speed >= 81 and $this->speed <= 100) {
-            return "Exces Moderat";
+            return "Exces moderat";
         } else if ($this->speed > 100) {
             return "Exces greu";
         }
