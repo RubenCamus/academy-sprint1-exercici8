@@ -42,25 +42,17 @@ class Biblioteca {
         $llibre = $this->consultarLlibre($isbn);
         switch ($filtre) {
             case 'isbn':
-            if ($llibre->isbn == $filtre) {
-                $llibre->isbn = $valorACanviar;
-                return new GeneralResponse(true, "S'ha canviat el ISBN del llibre");
-            }
+            $llibre->isbn = $valorACanviar;
+            return new GeneralResponse(true, "S'ha canviat el ISBN del llibre");
             case 'titol':
-            if ($llibre->titol == $filtre) {
-                $llibre->titol = $valorACanviar;
-                return new GeneralResponse(true, "S'ha canviat el TITOL del llibre");
-            }
+            $llibre->titol = $valorACanviar;
+            return new GeneralResponse(true, "S'ha canviat el TITOL del llibre");
             case 'autor':
-            if ($llibre->autor == $filtre) {
-                $llibre->autor = $valorACanviar;
-                return new GeneralResponse(true, "S'ha canviat l'AUTOR del llibre");
-            }
+            $llibre->autor = $valorACanviar;
+            return new GeneralResponse(true, "S'ha canviat l'AUTOR del llibre");
             case 'genere':
-            if ($llibre->genere == $filtre) {
-                $llibre->genere = $valorACanviar;
-                return new GeneralResponse(true, "S'ha canviat el GENERE del llibre");
-            }
+            $llibre->genere = $valorACanviar;
+            return new GeneralResponse(true, "S'ha canviat el GENERE del llibre");
             default:
             return null;
         }
