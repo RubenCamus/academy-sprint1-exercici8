@@ -42,6 +42,12 @@ class BibliotecaTest extends TestCase {
         $this->assertSame($biblioteca1->consultarLlibre($llibre->getISBN()), $llibre);
     }
     #[DataProvider("llibreProvider")]
+    public function testModificarLlibre(Llibre $llibre) {
+        $biblioteca1 = new Biblioteca([$llibre]);
+        $biblioteca1->modificarLlibre($llibre->isbn, "J.K Rowling", "autor");
+        $this->assertSame($biblioteca1->llibres[0]->autor, "J.K Rowling");
+    }
+    #[DataProvider("llibreProvider")]
     public function testEliminarLlibre(Llibre $llibre) {
         $biblioteca1 = new Biblioteca([$llibre]);
         $biblioteca1->eliminarLlibre($llibre);
