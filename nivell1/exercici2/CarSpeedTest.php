@@ -1,5 +1,7 @@
 <?php
-use Velocimeter as Velocimeter;
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\DataProvider;
+use Velocimeter;
 
 $velocimeter = new Velocimeter(10);
 echo $velocimeter->speedTest();

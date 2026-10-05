@@ -1,5 +1,5 @@
 <?php
-require  __DIR__ . '/../Biblioteca.php';
+require  __DIR__ . '/../src/Biblioteca.php';
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 
