@@ -1,6 +1,6 @@
 <?php
 
-require  __DIR__ . '/NumberChecker.php';
+require  __DIR__ . '/../exercici1/NumberChecker.php';
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 
